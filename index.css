@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 header {
+=======
+.header {
+>>>>>>> 39102eed3371aaa497005d868cf612fb8c9f330d
     /*font-family:;*/
     font-size: 24px;
     /*padding:;*/
     padding-top: 10px;
+<<<<<<< HEAD
     background-color: #000;
     position: relative;
 }
@@ -12,12 +17,21 @@ header a{
     padding: 0 20px;
     color: #fff;
     background-color: #000;
+=======
+}
+
+.header a{
+    float: right;
+    padding: 0 20px;
+    color: #fff;
+>>>>>>> 39102eed3371aaa497005d868cf612fb8c9f330d
 }
 
 .inicio {
     background: url("img/fundo1.png") no-repeat center;
     width: 100%;
     height: 900px;
+<<<<<<< HEAD
 }
 
 .textoP {
@@ -100,4 +114,6 @@ header a{
     padding-bottom: 15px;
     display: flex;
     align-items: row;
+=======
+>>>>>>> 39102eed3371aaa497005d868cf612fb8c9f330d
 }
