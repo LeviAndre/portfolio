@@ -1,0 +1,103 @@
+header {
+    /*font-family:;*/
+    font-size: 24px;
+    /*padding:;*/
+    padding-top: 10px;
+    background-color: #000;
+    position: relative;
+}
+
+header a{
+    float: right;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #000;
+}
+
+.inicio {
+    background: url("img/fundo1.png") no-repeat center;
+    width: 100%;
+    height: 900px;
+}
+
+.textoP {
+    font-size: 18px;
+    /*font-family: ;*/
+    color: #fff;
+}
+
+.textoP_preto {
+    font-size: 18px;
+    /*font-family: ;*/
+    color: #000;
+}
+
+.textoM {
+    font-size: 26px;
+    /*font-family: ;*/
+    color: #fff;
+}
+
+.textoP_preto {
+    font-size: 26px;
+    /*font-family: ;*/
+    color: #000;
+}
+
+.titulo {
+    font-size: 48px;
+    /*font-family: ;*/
+    color: #fff;
+}
+
+.titulo:after {
+    display: block;
+    content: "";
+    background: #fff;
+    height: 2px;
+    width: 130px;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.linha{
+    padding-right: 10px;
+}
+
+.linha2{
+    padding-right: 10px;
+}
+
+.linha:after {
+    display: block;
+    content: "";
+    background: #37A8EE;
+    height: 5px;
+    width: 145px;
+}
+
+.linha2:after {
+    display: block;
+    content: "";
+    background: #37A8EE;
+    height: 5px;
+    width: 50px;
+}
+
+.linha3:after {
+    display: block;
+    content: "";
+    background: #37A8EE;
+    height: 5px;
+    width: 20px;
+}
+
+.linhas {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: row;
+}
