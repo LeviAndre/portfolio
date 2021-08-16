@@ -1,102 +1,90 @@
-header {
-    /*font-family:;*/
-    font-size: 24px;
-    /*padding:;*/
-    padding-top: 10px;
-    background-color: #000;
-    position: relative;
-}
 
-header a{
-    float: right;
-    padding: 0 20px;
-    color: #fff;
-    background-color: #000;
-}
+/* HEADER */
 
-.inicio {
-    background: url("img/fundo1.png") no-repeat center;
+.header {
     width: 100%;
-    height: 750px;
+    height: 90px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%,rgb(37, 37, 37) 100%);
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    font-family: "Poppins", arial;
+    font-size: 24px;
+    text-align: right;
 }
 
-.textoP {
-    font-size: 18px;
-    /*font-family: ;*/
+.icon {
+    margin-left: 11%;
+    background: url("img/icon.png") no-repeat center;
+    position: absolute;
+    width: 142px;
+    height: 165px;
+}
+
+.header li {
+    padding-right: 30px;
+}
+
+.header a{
+    letter-spacing: .2em;
+    padding: 0;
+    padding-bottom: 15px;
     color: #fff;
-    text-align: left;
 }
 
-.textoP_preto {
-    font-size: 18px;
-    /*font-family: ;*/
-    color: #000;
-    text-align: left;
+.header a:hover{
+	border-bottom: 3px solid #37A8EE;
+    color: #37A8EE;
 }
 
-.textoM {
-    font-size: 26px;
-    /*font-family: ;*/
-    color: #fff;
-    text-align: left;
+.headerOpcoes {
+    display: flex;
+    align-items: row;
+    justify-content: flex-end;
+    padding-right: 10%;
+    margin: 15px 20px;
 }
 
-.textoP_preto {
-    font-size: 26px;
-    /*font-family: ;*/
-    color: #000;
-    text-align: left;
-}
+/* HEADER */
 
-.titulo {
-    font-size: 48px;
-    /*font-family: ;*/
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.titulo:after {
-    display: block;
-    content: "";
-    background: #fff;
-    height: 2px;
-    width: 130px;
-}
-
-.titulo_preto {
-    font-size: 48px;
-    /*font-family: ;*/
-    color: #000;
-    text-transform: uppercase;
-}
-
-.titulo_preto:after {
-    display: block;
-    content: "";
-    background: #000;
-    height: 2px;
-    width: 130px;
-}
+/* INICIO */
 
 .inicio {
+    background: url("img/fundoTeste.svg") no-repeat center; 
+
+    background-size: cover;
+    width: 100%;
+    height: 750px; 
+    
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
 .container{
-    padding: 0 0 0 180px;
+    padding: 0 0 0 11%;
 }
 
-.linha{
+.tresLinhas {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: row;
+    justify-content: flex-start;
+}
+
+
+.linha1 {
+    padding-right: 10px;
+
+}
+
+.linha2 {
     padding-right: 10px;
 }
 
-.linha2{
-    padding-right: 10px;
-}
-
-.linha:after {
+.linha1:after {
     display: block;
     content: "";
     background: #37A8EE;
@@ -117,34 +105,115 @@ header a{
     content: "";
     background: #37A8EE;
     height: 5px;
-    width: 20px;
+    width: 10px;
 }
 
-.linhas {
-    padding-bottom: 15px;
-    display: flex;
-    align-items: row;
+
+/* INICIO */
+
+/* TIPOGRAFIA */
+
+.textoP {
+    font-size: 18px;
+    font-family: "Poppins", arial;
+    color: #fff;
+    text-align: left;
+    line-height: 25px;
 }
+
+.textoP_preto {
+    font-size: 18px;
+    font-family: "Poppins", arial;
+    color: #000;
+    text-align: left;
+    line-height: 25px;
+}
+
+.textoM {
+    font-size: 24px;
+    font-family: "Poppins", arial;
+    color: #fff;
+    text-align: left;
+    line-height: 37px;
+}
+
+.textoM_preto {
+    font-size: 24px;
+    font-family: "Poppins", arial;
+    color: #000;
+    text-align: left;
+    line-height: 37px;
+}
+
+.titulo {
+    font-size: 48px;
+    font-family: "Poppins", arial;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 72px;
+    letter-spacing: 3px;
+    
+}
+
+.titulo:after {
+    display: block;
+    content: "";
+    background: #fff;
+    height: 5px;
+    width: 130px;
+}
+
+.titulo_preto {
+    font-size: 48px;
+    font-family: "Poppins", arial;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 72px;
+}
+
+.titulo_preto:after {
+    display: block;
+    content: "";
+    background: #000;
+    height: 5px;
+    width: 130px;
+}
+
+/* TIPOGRAFIA */
+
+/* BEM VINDO */
 
 .welcome {
-    padding: 90px 548px 90px 180px;
     width: 100%;
-    height: 130px;
+    padding: 90px 548px 90px 11%;
 }
 
 .welcome .titulo_preto {
     padding-bottom: 15px;
 }
 
+.welcomeText {
+    width: 750px;
+}
+
+/* BEM VINDO */
+
+/* SOBRE */
+
 .sobre {
     background: url("img/fundo2.png") no-repeat center;
+    background-size: cover;
     width: 100%;
     height: 1473px;
+    padding: 11%;
 }
 
 .imagem {
-    width: 460px;
-    height: 390px;
+    background: url("img/foto1.png");
+    width: 524px;
+    max-width: 100%;
+    height: 458px;
     /*padding: 174px 0 174px 180px;*/
 
 }
@@ -152,34 +221,41 @@ header a{
 .textBox {
     /*padding: 174px 180px 174px 0;*/
     width: 528px;
-    height: 230px;
+    max-width: 100%;
+    height: 360px;
+    padding: 40px 42px 0 0;
+}
+
+.textBox p {
+    padding-top: 12px;
+}
+
+.textBox:nth-child(1) {
+    padding: 40px 0 0 42px;
 }
 
 .info {
-    width: 100%;
     height: 700px;
+    width: 78%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
-.linhas2{
+.sobre .tresLinhas{
     height:5px;
     display: flex;
     align-items: row;
     justify-content: center;
+    position: absolute;
+    left: 11%;
+    right: 11%;
 }
 
-.linha5{
-    padding-right: 10px;
-}
-
-.linha6{
-    padding-right: 10px;
-}
-
-.linha5:after {
+.sobre .linha1:after {
     display: block;
     content: "";
     background: #fff;
@@ -187,7 +263,7 @@ header a{
     width: 1100px;
 }
 
-.linha6:after {
+.sobre .linha2:after {
     display: block;
     content: "";
     background: #fff;
@@ -195,10 +271,20 @@ header a{
     width: 70px;
 }
 
-.linha7:after {
+.sobre .linha3:after {
     display: block;
     content: "";
     background: #fff;
     height: 5px;
     width: 200px;
 }
+
+/* SOBRE */
+
+/* SOBRE - QUALIDADES */
+
+.qualidades {
+
+}
+
+/* SOBRE - QUALIDADES */

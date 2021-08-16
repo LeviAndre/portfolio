@@ -1,0 +1,177 @@
+    /*Estilo para tablets*/
+    @media only screen and (min-width: 788px) and (max-width: 979px) {
+
+        
+        .info {
+            justify-content: center;
+        }
+
+        .info .imagem:nth-child(2) {
+            background: none;
+            width: 0;
+            height: 0;
+        }
+
+        .textBox{
+            width: 700px;
+            padding: 60px 0 0 0;
+            text-align: center;
+        }
+
+        .textBox:nth-child(1){
+            padding: 350px 0 0 0;
+        }
+
+        .textBox p {
+            padding-top: 40px;
+        }
+
+        .sobre {
+            padding-top: 200px;
+        }
+
+        .sobre .tresLinhas {
+            top: 2340;
+            z-index: 10;
+        }
+
+        .sobre .linha1:after {
+            display: block;
+            content: "";
+            background: #fff;
+            height: 5px;
+            width: 500px;
+        }
+        
+        .sobre .linha2:after {
+            display: block;
+            content: "";
+            background: #fff;
+            height: 5px;
+            width: 200px;
+        }
+        
+        .sobre .linha3:after {
+            display: block;
+            content: "";
+            background: #fff;
+            height: 5px;
+            width: 70px;
+        }
+
+        .info .titulo:after {
+            display: block;
+            content: "";
+            background: #fff;
+            height: 0;
+            width: 0;
+        }
+
+        .info .titulo {
+            border-bottom: 5px solid white;
+        }
+
+        
+
+    } /* Final do estilo para tablets */
+        
+    /*Estilo para smartphone*/
+    @media only screen and (max-width: 787px) {
+
+        /* WELCOME */
+
+        
+        .welcomeText {
+            width: 420px;
+        }
+
+        .welcomeText .textoM_preto {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        /* WELCOME */
+    
+        /* SOBRE */
+        
+        .sobre {
+            padding-top: 200px;
+        }
+
+        .info {
+            justify-content: center;
+        }
+
+        .info .imagem:nth-child(2) {
+            background: none;
+            width: 0;
+            height: 0;
+        }
+
+        .textBox{
+            padding: 60px 0 0 0;
+            text-align: center;
+        }
+
+        .textBox:nth-child(1){
+            padding: 350px 0 0 0;
+        }
+
+        .info:nth-child(2) {
+            height: 360px;
+            text-align: center;
+        }
+
+        
+        .info .titulo {
+            border-bottom: 5px solid white;
+        }
+
+        .textBox p {
+            padding-top: 20px;
+        }
+
+        .info .titulo:after {
+            display: block;
+            content: "";
+            background: #fff;
+            height: 0;
+            width: 0;
+        }
+
+        .container{
+            padding: 0 0 0 7%;
+        }
+
+        .sobre .tresLinhas {
+            top: 2340;
+            z-index: 10;
+        }
+
+        .sobre .linha1:after {
+            display: block;
+            content: "";
+            background: #fff;
+            height: 5px;
+            width: 400px;
+        }
+        
+        .sobre .linha2:after {
+            display: block;
+            content: "";
+            background: #fff;
+            height: 5px;
+            width: 150px;
+        }
+        
+        .sobre .linha3:after {
+            display: block;
+            content: "";
+            background: #fff;
+            height: 5px;
+            width: 50px;
+        }
+
+        /* SOBRE */
+
+    } /* Final do estilo para smartphone */
