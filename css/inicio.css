@@ -1,0 +1,66 @@
+/* INICIO */
+
+.inicio {
+    background: #000;
+    background: url("../img/fundo.svg") no-repeat center;
+
+    background-size: cover;
+    width: 100%;
+    height: 750px; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.AndreLevi {
+    background: url("../img/titulo.png");
+    width: 644px;
+    height: 114px;
+}
+
+.container{
+    padding: 0 0 0 11%;
+}
+
+.tresLinhas {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: row;
+    justify-content: flex-start;
+}
+
+
+.linha1 {
+    padding-right: 10px;
+
+}
+
+.linha2 {
+    padding-right: 10px;
+}
+
+.linha1:after {
+    display: block;
+    content: "";
+    background: #37A8EE;
+    height: 5px;
+    width: 145px;
+}
+
+.linha2:after {
+    display: block;
+    content: "";
+    background: #37A8EE;
+    height: 5px;
+    width: 50px;
+}
+
+.linha3:after {
+    display: block;
+    content: "";
+    background: #37A8EE;
+    height: 5px;
+    width: 10px;
+}
+/* INICIO */

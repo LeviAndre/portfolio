@@ -1,5 +1,9 @@
 <html>
 	<head> 
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js" integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 		<title>Portfolio!</title>
 
 		<style>
@@ -7,9 +11,9 @@
 		</style>
 
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="index.css">
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="break.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/break.css">
 	</head>
 
 
@@ -30,8 +34,8 @@
 		</header>
 
 		<section class="inicio">
-			<div class="container">
-				<img src="img/titulo.png" class="anim" alt="Andre Levi">
+			<div class="container anim">
+				<div class="AndreLevi" alt="Andre Levi"></div>
 				<div class="tresLinhas">
 					<div class="linha1"></div>
 					<div class="linha2"></div>
@@ -50,16 +54,16 @@
 		</div>
 
 		<section class="sobre">
-			<div class="info">
-				<div class="imagem"></div>
-				<div class="textBox">
+			<section class="info">
+				<div class="imagem anim1"></div>
+				<div class="textBox subAnim1">
 					<h1 class="titulo">HACKEADO</h1>
 					<p class="textoP">hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda 
 						hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda 
 						hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda 
 					</p>
 				</div>
-			</div>
+			</section>
 
 			
 			<div class="tresLinhas">
@@ -68,7 +72,7 @@
 				<div class="linha3"></div>
 			</div>
 
-			<div class="info">
+			<section class="info anim2">
 				<div class="textBox">
 					<h1 class="titulo">HACKEADO</h1>
 					<p class="textoP">hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda hackeado seu merda 
@@ -77,15 +81,44 @@
 					</p>
 				</div>
 				<div class="imagem"></div>
+			</section>
+		</section>
+
+		<section class="habilidades">
+			<div class="tituloDiv">
+				<h1 class="titulo">Principais Habilidades</h1>
+				
+			<div class="tresLinhas">
+				<div class="linha1"></div>
+				<div class="linha2"></div>
+				<div class="linha3"></div>
+			</div>
+
+			</div>
+
+				
+			<div class="lista anim3">
+				<p class="textoP boxy anim4"><strong>qualidade 1:</strong> pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU </p>
+				<p class="textoP boxy anim5"><strong>qualidade 1:</strong> pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU </p>
+				<p class="textoP boxy anim6"><strong>qualidade 1:</strong> pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU pIUPIU </p>
 			</div>
 		</section>
 
-		<section class="qualidades">
-			
+		<section class="portfolio js-scroll">
+			<div class="tituloBG">
+				<h1 class="titulo">Portfolio</h1>
+
+				<div class="tresLinhas">
+					<div class="linha1"></div>
+					<div class="linha2"></div>
+					<div class="linha3"></div>
+				</div>
+	
+			</div>
 		</section>
 
-	
-	<script src="script.js"></script>  
+
+	<script type="module" src="modules/script.js"></script>  
 	</body>
 
 </html>
