@@ -1,0 +1,12 @@
+# Ignorar arquivos de configuração do sistema
+node_modules/
+.vscode/
+.idea/
+
+# Ignorar arquivos de build
+build/
+dist/
+
+# Ignorar arquivos de log e cache
+*.log
+.cache/

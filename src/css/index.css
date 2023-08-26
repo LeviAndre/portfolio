@@ -1,0 +1,9 @@
+@import 'tipografia.css';
+@import 'header.css';
+@import 'inicio.css';
+@import 'bemvindo.css';
+@import 'sobre.css';
+@import 'portfolio.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&display=swap');
