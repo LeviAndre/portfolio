@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 
 import "../../css/index.css";
 import "../../css/break.css";
 import "../../css/reset.css";
 
 function Intro() {
+
+    useLayoutEffect(() => {
+        headerAnim();
+    }, []);
 
     function headerAnim() {
         var prevScrollpos = window.pageYOffset;
