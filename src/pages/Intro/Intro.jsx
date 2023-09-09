@@ -1,5 +1,7 @@
 import React, { useLayoutEffect } from "react";
 
+import Navbar from "../../components/Navbar/Navbar.jsx"
+
 import "../../css/index.css";
 import "../../css/break.css";
 import "../../css/reset.css";
@@ -7,22 +9,7 @@ import "../../css/reset.css";
 function Intro() {
 
     useLayoutEffect(() => {
-        headerAnim();
     }, []);
-
-    function headerAnim() {
-        var prevScrollpos = window.pageYOffset;
-        const headerPos = document.querySelector('.js-header');
-        window.onscroll = function() {
-          var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            headerPos.classList.remove('ativo');
-          } else {
-            headerPos.classList.add('ativo');
-          }
-          prevScrollpos = currentScrollPos;
-        }
-    }
 
     function scrollAnim () {
 
@@ -125,23 +112,10 @@ function Intro() {
       }
 
     scrollAnim();
-    headerAnim();
 
     return (
         <>
-            <header className="header js-header">
-
-                <div className="icon">
-
-                </div>
-
-                <ul className="headerOpcoes">
-                    <li><a href="google.com">INÍCIO</a></li>
-                    <li><a href="google.com">SOBRE</a></li>
-                    <li><a href="google.com">PORTFOLIO</a></li>
-                    <li><a href="google.com" style={{color: '#37A8EE' }}>CONTATO</a></li>
-                </ul>
-            </header>
+            <Navbar />
 
             <section className="inicio">
                 <div className="container anim">
@@ -151,7 +125,7 @@ function Intro() {
                         <div className="linha2"></div>
                         <div className="linha3"></div>
                     </div>
-                    <p className="textoM">Desenvolvedor Front-End</p>
+                    <p className="textoM">Desenvolvedor Fullstack</p>
                 </div>
             </section>
 

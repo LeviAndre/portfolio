@@ -1,0 +1,98 @@
+/* HEADER */
+
+.header {
+    width: 15rem;
+    height: 100%;
+    background: #252525;
+    box-shadow: 
+      inset 0 10px 13px rgba(0, 0, 0, 0.1), /* Sombra superior */
+      inset 0 -10px 13px rgba(0, 0, 0, 0.1), /* Sombra inferior */
+      inset 10px 0 13px rgba(0, 0, 0, 0.1), /* Sombra direita */
+      inset -10px 0 13px rgba(0, 0, 0, 0.1); /* Sombra esquerda */
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    font-family: "Poppins", arial;
+    font-size: 18px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-container {
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+    width: 80px;
+}
+
+.header a{
+    letter-spacing: .1em;
+    color: #fff;
+}
+
+.header a:hover{
+  color: #37A8EE;
+}
+
+.headerOpcoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.js-header.ativo{
+    animation: headerTextUp .8s forwards;
+}
+
+.js-header.ativo .icon{
+    animation: headerUp .9s forwards;
+}
+
+.navbar-btn {
+  width: 100%;
+  height: 50px;
+  padding-right: 2rem;
+
+  display: flex;
+  justify-content: flex-end;
+
+  text-align: right;
+
+  background: none;
+  border: none;
+
+  color: white;
+}
+
+.navbar-btn:hover {
+  color: #37A8EE;
+}
+
+.social-medias {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height:12%;
+  width: 55%;
+}
+
+.linkedin-icon {
+  width: 20px;
+}
+
+.github-icon {
+  width: 25px;
+}
+
+.instagram-icon {
+  width: 28px;
+}
