@@ -1,57 +1,55 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import {
-    Navigation,
-    Pagination,
-    A11y,
-    Autoplay,
-  } from "swiper/modules";
-
+import useEmblaCarousel from 'embla-carousel-react'
 
 import "swiper/css";
 import "swiper/css/bundle";
 
+import cybersupply1 from "../../img/cybersupply/cybersupply-1.jpg"
 import cybersupply2 from "../../img/cybersupply/cybersupply-2.jpg"
+import cybersupply3 from "../../img/cybersupply/cybersupply-3.jpg"
+import cybersupply4 from "../../img/cybersupply/cybersupply-4.jpg"
+import cybersupply5 from "../../img/cybersupply/cybersupply-5.gif"
 
 function CyberSupply() {
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+
+    useEffect(() => {
+      if (emblaApi) {
+        console.log(emblaApi.slideNodes()) // Access API
+      }
+    }, [emblaApi])
+
     return(
         <>
             <section className="portfolio">
                 <div className="project-container">
-                    <div className="carousel-container">
-                        <Swiper
-                            modules={[Navigation, Pagination, A11y, Autoplay]}
-                            spaceBetween={0}
-                            slidesPerView={1}
-                            navigation
-                            pagination={{ clickable: true }}
-                            loop
-                            autoplay={{ delay: 8000 }}
-                        >
-                            <SwiperSlide>
-                                <img src={cybersupply2} alt=""  className="w-100"/>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <img src={cybersupply2} alt="" />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <img src={cybersupply2} alt="" />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <img src={cybersupply2} alt="" />
-                            </SwiperSlide>
-                        </Swiper>
-                    </div>
-
                     <div className="date-division">
                         <div className="grey-line"></div>
                         <h1 className="title-grey">2022</h1>
                         <div className="grey-line"></div>
+                    </div>
+
+                    <div className="carousel-container">
+                        <div className="embla" ref={emblaRef}>
+                            <div className="embla__container">
+                                <div className="embla__slide">
+                                    <img src={cybersupply2} alt=""  className="w-100"/>
+                                </div>
+                                <div className="embla__slide">
+                                    <img src={cybersupply1} alt=""  className="w-100"/>
+                                </div>
+                                <div className="embla__slide">
+                                    <img src={cybersupply3} alt=""  className="w-100"/>
+                                </div>
+                                <div className="embla__slide">
+                                    <img src={cybersupply4} alt=""  className="w-100"/>
+                                </div>
+                                <div className="embla__slide">
+                                    <img src={cybersupply5} alt=""  className="w-100"/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     {/* <img src={cybersupply2} alt=""  className="col-6"/> */}

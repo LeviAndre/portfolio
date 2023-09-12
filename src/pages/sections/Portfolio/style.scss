@@ -50,7 +50,8 @@
 
 .carousel-container {
     height: 30rem;
-    width: 50%;
+    max-width: 50%;
+    display: flex;
 }
 
 .date-division {
@@ -67,6 +68,17 @@
     width: 100%;
     margin: 25px;
     background-color: #5e5e5e;
+}
+
+.embla {
+    overflow: hidden;
+}
+.embla__container {
+    display: flex;
+}
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
 }
 
 /* PORTFOLIO */

@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
 
-import Navbar from "../../components/navbar/Navbar.jsx"
+import Navbar from "../../components/Navbar/Navbar.jsx"
 
 import Intro from "../sections/Intro/Intro.jsx"
 import About from "../sections/About/About.jsx"
