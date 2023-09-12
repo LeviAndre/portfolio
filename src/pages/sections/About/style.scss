@@ -1,26 +1,23 @@
 /* SOBRE */
 
-.sobre {
-    background: url("../img/fundo2.png") no-repeat center;
+.about {
+    background: url("./img/about-background.jpg") no-repeat center;
     background-size: cover;
+    background-position: 0% 50%;
+
     width: 100%;
-    height: 1473px;
 }
 
-.imagem {
-    background: url("../img/foto1.png");
-    
-    width: 400px;
-    max-width: 100%;
-    height: 350px;
-    /*padding: 174px 0 174px 180px;*/
+.about-session {
+    height: 64rem;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.textBox {
-    width: 528px;
-    height: 360px;
-    padding: 40px 42px 0 0;
+.skills-session {
+    height: 80rem;
 }
 
 .textBox p {
@@ -29,20 +26,6 @@
 
 .textBox:nth-child(1) {
     padding: 40px 0 0 42px;
-}
-
-.info {
-
-    height: 700px;
-    width: 78%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    padding-left: 11%;
-    padding-right: 11%;
 }
 
 .js js-scroll.ativo{
@@ -93,16 +76,7 @@
     background: #000B33;
 }
 
-.lista h1{
-    font-size: 18px;
-    font-family: "Poppins", arial;
-    color: #fff;
-    text-align: left;
-    line-height: 25px;
-    font-weight: bold;
-}
-
-.tituloDiv {
+.titulo-div {
     width: 100%;
     height: 180px;
     display: flex;
@@ -111,17 +85,8 @@
     align-items: center;
 }
 
-.tituloDiv .titulo:after {
+.titulo-div .titulo:after {
     display: none;
-}
-
-.lista {
-    background: url("../img/quali.png") no-repeat center;
-    margin: 120px auto;
-    height: 600px;
-    width: 800px;
-    
-    border: 2px solid #000B33;
 }
 
 .boxy {
@@ -138,14 +103,14 @@
     margin: -10px 0 0 20px;
 }
 
-.tituloDiv .tresLinhas{
+.titulo-div .tresLinhas{
     height: 5px;
     display: flex;
     align-items: row;
     justify-content: center;
 }
 
-.tituloDiv .linha1:after {
+.titulo-div .linha1:after {
     display: block;
     content: "";
     background: #37A8EE;
@@ -153,7 +118,7 @@
     width: 40px;
 }
 
-.tituloDiv .linha2:after {
+.titulo-div .linha2:after {
     display: block;
     content: "";
     background: #37A8EE;
@@ -161,7 +126,7 @@
     width: 200px;
 }
 
-.tituloDiv .linha3:after {
+.titulo-div .linha3:after {
     display: block;
     content: "";
     background: #37A8EE;
@@ -169,4 +134,25 @@
     width: 40px;
 }
 
-/* SOBRE - QUALIDADES */
+.photo {
+    width: 28.125rem;
+}
+
+.about-text {
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    width: 100%;
+}
+
+.about-text-box {
+    width: 49.875rem;
+}
+
+.transparent-dark-bg {
+    background-color: rgba(37, 37, 37, 0.8);
+}
+
+.skill-box {
+    height: 13rem;
+    margin: 10px;
+    padding: 20px;
+}

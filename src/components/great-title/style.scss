@@ -1,0 +1,17 @@
+.tituloBG {
+    width: 100%;
+    height: 200px;
+
+    background: url("../../assets/default-background.jpg") no-repeat center;
+    background-size: cover;
+    background-position: 0% 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloBG .titulo:after {
+    display: none;
+}

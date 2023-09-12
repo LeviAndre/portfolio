@@ -1,11 +1,31 @@
+/* BEM VINDO */
+
+.welcome {
+    height: 25rem;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 5rem;
+}
+
+.welcome .titulo_preto {
+    
+    padding-bottom: 15px;
+}
+
+/* BEM VINDO */
+
 /* INICIO */
 
 .inicio {
     background: #000;
-    background: url("../img/fundo.jpg") no-repeat center;
+    background: url("../../../assets/default-background.jpg") no-repeat center;
 
     background-size: cover;
-    background-position: 100% 30%;
+    background-position: 100% 70%;
     width: 100%;
     height: 100vh; 
     
@@ -13,15 +33,11 @@
     align-items: center;
     justify-content: flex-start;
 }
-
+ 
 .AndreLevi {
-    background: url("../img/titulo.png");
+    background: url("../../../assets/titulo.png");
     width: 644px;
     height: 114px;
-}
-
-.container{
-    padding: 0 0 0 11%;
 }
 
 .tresLinhas {

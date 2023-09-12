@@ -18,7 +18,8 @@ function Navbar () {
                 <ul className="headerOpcoes">
                     <li><button className="navbar-btn">INÍCIO</button></li>
                     <li><button className="navbar-btn">SOBRE</button></li>
-                    <li><button className="navbar-btn">PORTFOLIO</button></li>
+                    <li><button className="navbar-btn">PORTFÓLIO</button></li>
+                    <li><button className="navbar-btn">EXPERIÊNCIA</button></li>
                     <li><button className="navbar-btn">CONTATO</button></li>
                 </ul>
             </div>

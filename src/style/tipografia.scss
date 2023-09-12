@@ -1,0 +1,45 @@
+/* TIPOGRAFIA */
+
+.textoP {
+    font-size: 22px;
+    font-family: "Poppins", arial;
+
+    color: #fff;
+
+    text-align: left;
+    line-height: 2rem;
+}
+
+.textoM {
+    font-size: 24px;
+    font-family: "Poppins", arial;
+    color: #fff;
+    text-align: left;
+    line-height: 37px;
+}
+
+.title-grey {
+    font-size: 48px;
+    font-family: "Poppins", arial;
+    color: #5e5e5e;
+    text-transform: uppercase;
+    line-height: 72px;
+    letter-spacing: 3px;
+}
+
+.titulo {
+    font-size: 48px;
+    font-family: "Poppins", arial;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 72px;
+    letter-spacing: 3px;
+}
+
+.titulo:after {
+    display: block;
+    content: "";
+    background: #fff;
+    height: 5px;
+    width: 130px;
+}

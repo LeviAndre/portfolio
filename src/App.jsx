@@ -1,12 +1,12 @@
 // import Routes from "config/routes";
 import React from "react";
 // import "./globalStyles.css";
-import Intro from "./pages/Intro/Intro.jsx"
+import SPApp from "./pages/SPApp/SPApp.jsx"
 
 function App () {
   return (
     <>
-      <Intro />
+      <SPApp />
     </>
   );
 };
