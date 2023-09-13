@@ -1,11 +1,12 @@
 import React, { useLayoutEffect } from "react";
 
-import Navbar from "../../components/navbar/Navbar.jsx"
+import Navbar from "../../components/Navbar/Navbar.jsx"
 
 import Intro from "../sections/Intro/Intro.jsx"
 import About from "../sections/About/About.jsx"
 import Portfolio from "../sections/Portfolio/Portfolio.jsx"
 import Experience from "../sections/Experience/Experience.jsx"
+import Contact from "../sections/Contact/Contact.jsx"
 
 import "../../style/index.scss";
 import "../../style/break.scss";
@@ -27,6 +28,7 @@ function SPApp() {
                 <About />
                 <Portfolio />
                 <Experience />
+                <Contact />
             </div>
         </>
     )

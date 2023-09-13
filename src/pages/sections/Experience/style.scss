@@ -1,16 +1,18 @@
 .experience-section {
     background: #252525;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .exp-container {
     padding: 5rem;
     display: flex;
+    flex-wrap: wrap;
     width: 80%;
 }
 
 .exp-icon {
-    width: 6rem;
+    width: 100%;
     border-radius: 1rem;
 }
