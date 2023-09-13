@@ -42,7 +42,7 @@
 }
 
 .project-container {
-    padding: 5rem;
+    padding: 5rem 5rem 5rem 5rem;
     display: flex;
     flex-wrap: wrap;
     color: white;
@@ -57,7 +57,7 @@
 .date-division {
     width: 100%;
     text-align: center;
-    padding: 5rem;
+    padding-bottom: 5rem;
 
     display: flex;
     align-items: center;
@@ -73,12 +73,19 @@
 .embla {
     overflow: hidden;
 }
+
 .embla__container {
     display: flex;
 }
+
 .embla__slide {
     flex: 0 0 100%;
     min-width: 0;
+}
+
+.slide-container {
+    max-height: 26rem;
+    overflow: hidden;
 }
 
 /* PORTFOLIO */

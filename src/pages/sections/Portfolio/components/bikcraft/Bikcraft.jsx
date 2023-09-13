@@ -5,13 +5,11 @@ import useEmblaCarousel from 'embla-carousel-react'
 import "swiper/css";
 import "swiper/css/bundle";
 
-import cybersupply1 from "../../img/cybersupply/cybersupply-1.jpg"
-import cybersupply2 from "../../img/cybersupply/cybersupply-2.jpg"
-import cybersupply3 from "../../img/cybersupply/cybersupply-3.jpg"
-import cybersupply4 from "../../img/cybersupply/cybersupply-4.jpg"
-import cybersupply5 from "../../img/cybersupply/cybersupply-5.gif"
+import bikcraft1 from "../../img/bikcraft/bikcraft-1.png"
+import bikcraft2 from "../../img/bikcraft/bikcraft-2.png"
+import bikcraft3 from "../../img/bikcraft/bikcraft-3.png"
 
-function CyberSupply() {
+function Bikcraft() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
     useEffect(() => {
@@ -26,7 +24,7 @@ function CyberSupply() {
                 <div className="project-container">
                     <div className="date-division">
                         <div className="grey-line"></div>
-                        <h1 className="title-grey">2022</h1>
+                        <h1 className="title-grey">2021</h1>
                         <div className="grey-line"></div>
                     </div>
 
@@ -34,26 +32,20 @@ function CyberSupply() {
                         <div className="embla" ref={emblaRef}>
                             <div className="embla__container">
                                 <div className="embla__slide slide-container">
-                                    <img src={cybersupply2} alt=""  className="w-100"/>
+                                    <img src={bikcraft1} alt=""  className="w-100"/>
                                 </div>
                                 <div className="embla__slide slide-container">
-                                    <img src={cybersupply1} alt=""  className="w-100"/>
+                                    <img src={bikcraft2} alt=""  className="w-100"/>
                                 </div>
                                 <div className="embla__slide slide-container">
-                                    <img src={cybersupply3} alt=""  className="w-100"/>
-                                </div>
-                                <div className="embla__slide slide-container">
-                                    <img src={cybersupply4} alt=""  className="w-100"/>
-                                </div>
-                                <div className="embla__slide slide-container">
-                                    <img src={cybersupply5} alt=""  className="w-100"/>
+                                    <img src={bikcraft3} alt=""  className="w-100"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div className="d-flex flex-column col-6 px-5">
-                        <h1 className="titulo mb-3">CYBER SUPPLY</h1>
+                        <h1 className="titulo mb-3">BIKCRAFT</h1>
 
                         <p className="textoP">
                             Cyber Supply é um projeto que já passou por cerca de três refatorações desde a sua criação. O motivo da sua criação a princípio foi um projeto
@@ -68,4 +60,4 @@ function CyberSupply() {
     )
 }
 
-export default CyberSupply;
+export default Bikcraft;
