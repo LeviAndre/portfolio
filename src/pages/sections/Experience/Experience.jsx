@@ -9,9 +9,10 @@ import "./style.scss";
 function Experience() {
     return (
         <>
+            <section className="experience-section" id="scroll-experience">
+
             <GreatTitle titleText="Experiência" />
 
-            <section className="experience-section">
                 {experiences.map((experience, index) => (
                     <ExpSlot
                         key={index}

@@ -5,7 +5,7 @@ import "./style.scss"
 function Intro () {
     return (
         <>
-            <section className="inicio">
+            <section className="inicio" id="scroll-intro">
                 <div className="container anim">
                     <div className="AndreLevi" alt="Andre Levi"></div>
                     <div className="tresLinhas">

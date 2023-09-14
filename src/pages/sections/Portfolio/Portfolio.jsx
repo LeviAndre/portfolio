@@ -10,10 +10,12 @@ import Bikcraft from "./components/bikcraft/Bikcraft";
 function Portfolio () {
     return (
         <>
-            <GreatTitle titleText={"PORTFOLIO"}/>
+            <section id="scroll-portfolio">
+                <GreatTitle titleText={"PORTFOLIO"}/>
 
-            <CyberSupply /> 
-            <Bikcraft />
+                <CyberSupply /> 
+                <Bikcraft />
+            </section>
         </>
     )
 }

@@ -7,7 +7,7 @@ import "./style.scss"
 function About () {
     return (
         <>
-            <section className="about">
+            <section className="about" id="scroll-about">
                 <div className="anim2 about-session">
                     <div className="col-4 d-flex justify-content-end">
                         <img src={photo} alt="" className="photo" />

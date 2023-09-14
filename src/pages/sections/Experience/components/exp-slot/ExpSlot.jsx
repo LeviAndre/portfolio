@@ -11,7 +11,7 @@ function ExpSlot({ imgSrc, corpText, jobText, startedAt, endedAt = "Atual", desc
 
                 <div className="px-4 col-11">
                     <div className="d-flex justify-content-between">
-                        <b className="textoP">{corpText} | {jobText}</b> <p className="textoP">{startedAt} - {endedAt}</p>
+                        <b className="textoP">{corpText} | {jobText}</b> <p className="textoP text-secondary">{startedAt} - {endedAt}</p>
                     </div>
 
 
