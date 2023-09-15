@@ -4,10 +4,24 @@ import photo from "./img/photo.png"
 
 import "./style.scss"
 
+import reactIcon from "../../../assets/icons/reactjs.svg"
+import angularIcon from "../../../assets/icons/angular.svg"
+import csharpIcon from "../../../assets/icons/csharp.svg"
+import jsIcon from "../../../assets/icons/js.svg"
+import tsIcon from "../../../assets/icons/typescript.svg"
+
 function About () {
     return (
         <>
             <section className="about" id="scroll-about">
+                <div className="welcome">
+                    <div className="col-8">
+                        <h1 className="titulo text-dark">Bem vindo!</h1>
+                        <p className="textoP text-dark">Este site é um portfolio criado com a intenção de arquivar os projetos feitos ao longo
+                            da minha carreira como desenvolvedor, sendo também uma forma de me apresentar profissional e pessoalmente.</p>
+                    </div>
+                </div>
+
                 <div className="anim2 about-session">
                     <div className="col-4 d-flex justify-content-end">
                         <img src={photo} alt="" className="photo" />
@@ -44,14 +58,25 @@ function About () {
                         <div className="col-9 d-flex flex-wrap justify-content-center anim3">
                             <div className="textoP col-5 transparent-dark-bg skill-box">
                                 <p className="h-75"><b>React e Angular:</b> Meio atípico, mas onde eu trabalho eu utilizo duas tecnologias diferentes para front-end em projetos distintos. </p>
+                                <div>
+                                    <img src={reactIcon} alt="" className="tech-icon"/>
+                                    <img src={angularIcon} alt="" className="tech-icon"/>
+                                </div>
                             </div>
 
                             <div className="textoP col-5 transparent-dark-bg skill-box">
                                 <p className="h-75"><b>.NET:</b> Desde versões antigas até as mais recentes, eu tenho criado meu conhecimento em backend baseado nas tecnologias de API do .NET Framework. </p>
+                                <div>
+                                    <img src={csharpIcon} alt="" className="tech-icon"/>
+                                </div>
                             </div>
 
                             <div className="textoP col-5 transparent-dark-bg skill-box">
                                 <p className="h-75"><b>Javascript e Typescript:</b> Visto que eu trabalho com Angular, não poderia ser diferente. Ainda indeciso, mas tenho experiencia em JS puro e o famoso JS tipado.</p>
+                                <div>
+                                    <img src={jsIcon} alt="" className="tech-icon"/>
+                                    <img src={tsIcon} alt="" className="tech-icon"/>
+                                </div>
                             </div>
 
                             <div className="textoP col-5 transparent-dark-bg skill-box">

@@ -4,8 +4,8 @@ import "./style.scss"
 
 import GreatTitle from "../../../components/great-title/GreatTitle";
 
-import CyberSupply from "./components/cyber-supply/CyberSupply";
-import Bikcraft from "./components/bikcraft/Bikcraft";
+import Project from "./components/project/Project";
+import { projects } from "./projects.jsx";
 
 function Portfolio () {
     return (
@@ -13,8 +13,15 @@ function Portfolio () {
             <section id="scroll-portfolio">
                 <GreatTitle titleText={"PORTFOLIO"}/>
 
-                <CyberSupply /> 
-                <Bikcraft />
+                {projects && projects.map((project, index) => (
+                    <Project 
+                        key={index}
+                        year={project.year}
+                        images={project.images}
+                        title={project.title}
+                        description={project.description}
+                    />
+                ))}
             </section>
         </>
     )

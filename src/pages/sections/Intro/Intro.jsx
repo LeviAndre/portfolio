@@ -16,14 +16,6 @@ function Intro () {
                     <p className="textoM">Desenvolvedor Fullstack</p>
                 </div>
             </section>
-
-            <div className="welcome">
-                <div className="col-8">
-                    <h1 className="titulo text-dark">Bem vindo!</h1>
-                    <p className="textoP text-dark">Este site é um portfolio criado com a intenção de arquivar os projetos feitos ao longo
-                        da minha carreira como desenvolvedor, sendo também uma forma de me apresentar profissional e pessoalmente.</p>
-                </div>
-            </div>
         </>
     )
 }

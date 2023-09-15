@@ -9,25 +9,34 @@ import instagram from "../../assets/icons/instagram.svg"
 
 function Navbar() {
     const [activeSection, setActiveSection] = useState("");
-
+  
     useEffect(() => {
-        function checkActiveSection() {
-            const sections = ["scroll-intro", "scroll-about", "scroll-portfolio", "scroll-experience", "scroll-contact"];
-            const windowY = window.scrollY + (window.innerHeight / 2);
-
-            for (const section of sections) {
-                const target = document.getElementById(section);
-                if (target) {
-                    const elementRect = target.getBoundingClientRect();
-                    if (elementRect.top <= windowY && elementRect.bottom >= windowY) {
-                        setActiveSection(section);
-                    }
-                }
+      // Função para verificar a seção ativa com base na posição da janela de visualização
+      function checkActiveSection() {
+        const sections = ["scroll-intro", "scroll-about", "scroll-portfolio", "scroll-experience", "scroll-contact"];
+        const windowY = window.scrollY;
+  
+        for (const section of sections) {
+          const target = document.getElementById(section);
+          if (target) {
+            const elementRect = target.getBoundingClientRect();
+            if (elementRect.top <= windowY && elementRect.bottom >= windowY) {
+              setActiveSection(section);
             }
+          }
         }
-
-        window.addEventListener("scroll", checkActiveSection);
-        checkActiveSection();
+      }
+  
+      // Adicionar um ouvinte de evento de rolagem para verificar a seção ativa
+      window.addEventListener("scroll", checkActiveSection);
+  
+      // Verificar a seção ativa inicialmente
+      checkActiveSection();
+  
+      // Remover o ouvinte de evento de rolagem ao desmontar o componente
+      return () => {
+        window.removeEventListener("scroll", checkActiveSection);
+      };
     }, []);
 
     function scrollSections(section) {
