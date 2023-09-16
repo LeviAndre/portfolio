@@ -49,15 +49,13 @@
 }
 
 .carousel-container {
-    height: 30rem;
-    max-width: 50%;
     display: flex;
 }
 
 .date-division {
     width: 100%;
     text-align: center;
-    padding-bottom: 5rem;
+    padding: 5rem 0;
 
     display: flex;
     align-items: center;
@@ -86,6 +84,21 @@
 .slide-container {
     max-height: 26rem;
     overflow: hidden;
+}
+
+.github-tag {
+    color: #FFF;
+    display: flex;
+    gap: 5px;
+    font-size: 22px;
+    background-color: #1b1b1b;
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+}
+
+.github-tag-disabled {
+    cursor: not-allowed;
+    color: gray;
 }
 
 /* PORTFOLIO */

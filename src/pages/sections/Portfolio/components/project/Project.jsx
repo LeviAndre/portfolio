@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 
 import useEmblaCarousel from 'embla-carousel-react'
-function Project({ year, images, title, description}) {
+
+import githubIcon from "../../../../../assets/icons/github.svg"
+import githubGreyIcon from "../../../../../assets/icons/github-grey.svg"
+
+function Project({ year, images, title, description, githubUrl, fmrkIcons}) {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
     useEffect(() => {
@@ -12,33 +16,53 @@ function Project({ year, images, title, description}) {
 
     return (
         <section className="portfolio">
-        <div className="project-container">
             <div className="date-division">
                 <div className="grey-line"></div>
                 <h1 className="title-grey">{year}</h1>
                 <div className="grey-line"></div>
             </div>
 
-            <div className="carousel-container">
-                <div className="embla" ref={emblaRef}>
-                    <div className="embla__container">
-                        {images && images.map((image, index) => (
-                            <div key={index} className="embla__slide slide-container">
-                                <img src={image} alt=""  className="w-100"/>
-                            </div>
+            <div className="project-container">
+
+                <div className="carousel-container col-6">
+                    <div className="embla" ref={emblaRef}>
+                        <div className="embla__container">
+                            {images && images.map((image, index) => (
+                                <div key={index} className="embla__slide slide-container">
+                                    <img src={image} alt=""  className="w-100 h-100"/>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="d-flex flex-column justify-content-between col-6 px-5">
+                    <div>
+                        <div className="d-flex align-items-start justify-content-between">
+                            <h1 className="titulo mb-3">{title}</h1>
+                            { githubUrl ? (
+                                <a className="github-tag" href={githubUrl} target="_blank">
+                                    <img src={githubIcon} alt="" disable  /> Projeto
+                                </a>
+                            ) : (
+                                <a className="github-tag github-tag-disabled" target="_blank">
+                                    <img src={githubGreyIcon} alt="" disable  /> Projeto
+                                </a>
+                            )}
+                        </div>
+                        <p className="textoP">
+                            {description}
+                        </p>
+                    </div>
+
+                    <div className="col-12 d-flex justify-content-end">
+                        { fmrkIcons && fmrkIcons.map((icon, index) => (
+                            <img key={index} src={icon} alt="" className="tech-icon" />
                         ))}
                     </div>
                 </div>
             </div>
-            
-            <div className="d-flex flex-column col-6 px-5">
-                <h1 className="titulo mb-3">{title}</h1>
-                <p className="textoP">
-                    {description}
-                </p>
-            </div>
-        </div>
-    </section>
+        </section>
     );
 }
 

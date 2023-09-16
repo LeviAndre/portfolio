@@ -20,6 +20,8 @@ function Portfolio () {
                         images={project.images}
                         title={project.title}
                         description={project.description}
+                        fmrkIcons={project.fmrkIcons}
+                        githubUrl={project.githubUrl}
                     />
                 ))}
             </section>
