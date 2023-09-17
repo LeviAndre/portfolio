@@ -8,9 +8,9 @@ import bikcraft1 from "./img/bikcraft/bikcraft-1.png"
 import bikcraft2 from "./img/bikcraft/bikcraft-2.png"
 import bikcraft3 from "./img/bikcraft/bikcraft-3.png"
 
-import beatrizbarrere1 from "./img/beatriz-barrere/Screenshot_1.png"
-import beatrizbarrere2 from "./img/beatriz-barrere/Screenshot_2.png"
-import beatrizbarrere3 from "./img/beatriz-barrere/Screenshot_3.png"
+import psicologa1 from "./img/apresentacao-profissional/psicologa-1.jpg"
+import psicologa2 from "./img/apresentacao-profissional/psicologa-2.jpg"
+import psicologa3 from "./img/apresentacao-profissional/psicologa-3.jpg"
 
 import reactIcon from "../../../assets/icons/reactjs.svg"
 import htmlIcon from "../../../assets/icons/html5.svg"
@@ -39,10 +39,9 @@ export const projects = [
         githubUrl: "https://github.com/LeviAndre/bikcraft",
     },
     {
-        year: 2021,
-        images: [beatrizbarrere1, beatrizbarrere2, beatrizbarrere3],
-        title: "Beatriz Barrere",
-        description: "Bikcraft foi um projeto feito para acompanhar um curso de front-end e alinhar mais meus conhecimentos de HTML e CSS algum tempo atrás. A ideia do projeto seria basicamente uma Landing Page de um site de venda de bicicletas.",
+        images: [psicologa1, psicologa2, psicologa3],
+        title: "Apresentação Profissional",
+        description: "Este projeto de apresentação profissional foi desenvolvido em parceria com um colega e tinha o propósito de destacar o trabalho de uma profissional da área de psicologia. O site foi publicado na época, mas não está mais disponível online.",
         fmrkIcons: [ reactIcon, jsIcon, tsIcon, htmlIcon, cssIcon ],
         githubUrl: "https://github.com/Scaralu/beatriz-barrere",
     }

@@ -4,8 +4,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+
+    padding: 5rem 0;
     
     background: #252525;
 }
@@ -42,7 +44,6 @@
 }
 
 .project-container {
-    padding: 5rem 5rem 5rem 5rem;
     display: flex;
     flex-wrap: wrap;
     color: white;
@@ -99,6 +100,16 @@
 .github-tag-disabled {
     cursor: not-allowed;
     color: gray;
+}
+
+.textbox-padding{
+    padding: 0 3rem;
+}
+
+@media (max-width: 1400px) {
+    .textbox-padding{
+        padding: 3rem 0;
+    }
 }
 
 /* PORTFOLIO */

@@ -22,13 +22,13 @@ function Contact() {
                 </div>
 
                 <div className="contact-container">
-                    <div className="textoP">
+                    <div className="textoP col-xxl-6 col-xl-6 col-12">
                         <p><a href="" className="text-light d-flex align-items-center"><img src={linkedin} className="linkedin-icon mx-2" alt="Instagram" />Linkedin</a></p>
                         <p><a href="" className="text-light d-flex align-items-center"><img src={github} className="github-icon mx-2" alt="Instagram" />Github</a></p>
                         <p><a href="" className="text-light d-flex align-items-center"><img src={instagram} className="instagram-icon mx-2" alt="Instagram" />Instagram</a></p>
                     </div>
 
-                    <div className="textoP">
+                    <div className="textoP col-xxl-6 col-xl-6 col-12">
                         <p><b>Email: </b><a href="" className="text-light">andrelevi767@gmail.com</a></p>
                         <p><b>Celular: </b><a href="" className="text-light">(11) 9 9484-8357</a></p>
                     </div>

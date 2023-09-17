@@ -1,5 +1,4 @@
 /* HEADER */
-
 .header {
     width: 15rem;
     height: 100%;
@@ -99,4 +98,38 @@
 
 .instagram-icon {
   width: 28px;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #FFF;
+}
+
+.bm-burger-bars-hover {
+  background: #bdbdbd;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+.bm-item {
+  display: inline-block;
 }

@@ -15,7 +15,7 @@ function About () {
         <>
             <section className="about" id="scroll-about">
                 <div className="welcome">
-                    <div className="col-8">
+                    <div className="col-xxl-8 col-12">
                         <h1 className="titulo text-dark">Bem vindo!</h1>
                         <p className="textoP text-dark">Este site é um portfolio criado com a intenção de arquivar os projetos feitos ao longo
                             da minha carreira como desenvolvedor, sendo também uma forma de me apresentar profissional e pessoalmente.</p>
@@ -23,14 +23,14 @@ function About () {
                 </div>
 
                 <div className="anim2 about-session">
-                    <div className="col-xxl-4 col-md-12 d-flex justify-content-end">
+                    <div className="col-xxl-4 col d-flex justify-content-end">
                         <img src={photo} alt="" className="photo" />
                     </div>
 
                     <div className="about-text transparent-dark-bg">
                         <div className="about-text-box">
                             <h1 className="titulo mb-3">SOBRE MIM</h1>
-                            <p className="textoP">
+                            <p className="textoP mb-3">
                                     Meu nome é André Levi, tenho 23 anos e estou me formando esse ano (2023) em Ciência da Computação. Desde pequeno eu vivo em contato com computadores
                                 e sendo assim, minha escolha da carreira não poderia ser diferente. <br /><br /> 
                                 
@@ -43,8 +43,8 @@ function About () {
                 </div>
 
                 <div className="skills-session d-flex flex-column justify-content-between">
-                    <div className="titulo-div transparent-dark-bg">
-                        <h1 className="titulo">Principais Habilidades</h1>
+                    <div className="titulo-div mb-3 transparent-dark-bg">
+                        <h1 className="titulo text-center">Principais Habilidades</h1>
 
                         <div className="tresLinhas">
                             <div className="linha1"></div>
@@ -56,7 +56,7 @@ function About () {
 
                     <div className="col-12 d-flex flex-column justify-content-between align-items-center">
                         <div className="col-xxl-9 col-xl-12 d-flex flex-wrap justify-content-center anim3">
-                            <div className="textoP col-11 col-xxl-5 transparent-dark-bg skill-box">
+                            <div className="textoP col-11 col-xl-5 transparent-dark-bg skill-box">
                                 <p className="h-75"><b>React e Angular:</b> Tenho contato com ambas as tecnologias nos meus projetos e no meio profissional desde sempre, mesmo sendo dois mundos completamente diferentes.</p>
                                 <div>
                                     <img src={reactIcon} alt="" className="tech-icon"/>
@@ -64,14 +64,14 @@ function About () {
                                 </div>
                             </div>
 
-                            <div className="textoP col-11 col-xxl-5 transparent-dark-bg skill-box">
+                            <div className="textoP col-11 col-xl-5 transparent-dark-bg skill-box">
                                 <p className="h-75"><b>.NET:</b> Tenho experiência com .NET até nas versões mais antigas (merito aos sistemas legado), e todo o meu conhecimento de back-end foi moldado em cima dessa tecnologia. </p>
                                 <div>
                                     <img src={csharpIcon} alt="" className="tech-icon"/>
                                 </div>
                             </div>
 
-                            <div className="textoP col-11 col-xxl-5 transparent-dark-bg skill-box">
+                            <div className="textoP col-11 col-xl-5 transparent-dark-bg skill-box">
                                 <p className="h-75"><b>Javascript e Typescript:</b> Javascript é indispensável, e na maioria dos projetos dos quais eu faço parte, eu tenho também mantido contato com o JS tipado.</p>
                                 <div>
                                     <img src={jsIcon} alt="" className="tech-icon"/>
@@ -79,7 +79,7 @@ function About () {
                                 </div>
                             </div>
 
-                            <div className="textoP col-11 col-xxl-5 transparent-dark-bg skill-box">
+                            <div className="textoP col-11 col-xl-5 transparent-dark-bg skill-box">
                                 <p className="h-75"><b>SQL:</b> Tenho conhecimento a respeito da estrutura de um banco de dados relacional, e prática com a execução de queries quando necessário.</p>
                             </div>
                         </div>

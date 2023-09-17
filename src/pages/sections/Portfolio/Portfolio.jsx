@@ -10,19 +10,21 @@ import { projects } from "./projects.jsx";
 function Portfolio () {
     return (
         <>
-            <section id="scroll-portfolio">
+            <section className="portfolio" id="scroll-portfolio">
                 <GreatTitle titleText={"PORTFOLIO"}/>
 
                 {projects && projects.map((project, index) => (
-                    <Project 
-                        key={index}
-                        year={project.year}
-                        images={project.images}
-                        title={project.title}
-                        description={project.description}
-                        fmrkIcons={project.fmrkIcons}
-                        githubUrl={project.githubUrl}
-                    />
+                    <div className="col-xxl-11 col-xl-9 col-11">
+                        <Project 
+                            key={index}
+                            year={project.year}
+                            images={project.images}
+                            title={project.title}
+                            description={project.description}
+                            fmrkIcons={project.fmrkIcons}
+                            githubUrl={project.githubUrl}
+                        />
+                    </div>
                 ))}
             </section>
         </>

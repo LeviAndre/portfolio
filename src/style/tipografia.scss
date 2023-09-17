@@ -27,6 +27,23 @@
     letter-spacing: 3px;
 }
 
+.small-title {
+    font-size: 32px;
+    font-family: "Poppins", arial;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+
+.small-title:after {
+    display: block;
+    content: "";
+    background: #fff;
+    height: 3px;
+    width: 130px;
+}
+
 .titulo {
     font-size: 48px;
     font-family: "Poppins", arial;

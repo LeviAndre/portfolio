@@ -135,7 +135,7 @@
 }
 
 .photo {
-    width: 28.125rem;
+    width: 80%;
 }
 
 .about-text {
@@ -144,7 +144,7 @@
 }
 
 .about-text-box {
-    width: 49.875rem;
+    width: 90%;
 }
 
 .transparent-dark-bg {
@@ -178,3 +178,18 @@
     
     padding-bottom: 15px;
 }
+
+@media (max-width: 768px) {
+    .welcome {
+        padding: 1.3rem;
+    }
+
+    .about-text {
+        padding: 1.3rem;
+    }
+
+    .skill-box {
+        height: 20rem;
+    }
+}
+  

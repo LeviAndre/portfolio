@@ -6,24 +6,27 @@ import { experiences } from "./experiences.jsx"
 
 import "./style.scss";
 
-function Experience() {
+function Experience({ isMobile }) {
     return (
         <>
             <section className="experience-section" id="scroll-experience">
 
-            <GreatTitle titleText="Experiência" />
+                <GreatTitle titleText="Experiência" />
 
                 {experiences.map((experience, index) => (
-                    <ExpSlot
-                        key={index}
-                        imgSrc={experience.imgSrc}
-                        corpText={experience.corpText}
-                        jobText={experience.jobText}
-                        startedAt={experience.startedAt}
-                        endedAt={experience.endedAt}
-                        description={experience.description}
-                        icons={experience.icons}
-                    />
+                    <div className="col-xxl-9 col-11 my-5">
+                        <ExpSlot
+                            isMobile={isMobile}
+                            key={index}
+                            imgSrc={experience.imgSrc}
+                            corpText={experience.corpText}
+                            jobText={experience.jobText}
+                            startedAt={experience.startedAt}
+                            endedAt={experience.endedAt}
+                            description={experience.description}
+                            icons={experience.icons}
+                        />
+                    </div>
                 ))}
 
             </section>

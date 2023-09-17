@@ -1,3 +1,9 @@
 .navbar-spacing {
     padding-left: 15rem; 
 } 
+
+@media (max-width: 767px) {
+    .navbar-spacing {
+        padding-left: 0; 
+    } 
+}

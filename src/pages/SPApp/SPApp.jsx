@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import Navbar from "../../components/Navbar/Navbar.jsx"
 
@@ -15,19 +15,33 @@ import "../../style/reset.scss";
 import "./style.scss"
 
 function SPApp() {
+    const [isMobile, setIsMobile] = useState();
 
-    useLayoutEffect(() => {
+    function handleWindowSizeChange() {
+        if (window.outerWidth <= 768) {
+            setIsMobile(true);
+            return
+        }
+        setIsMobile(false);
+    }
+
+    useEffect(() => {
+        handleWindowSizeChange();
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
     }, []);
 
     return (
         <>
-            <Navbar />
+            <Navbar isMobile={isMobile} />
 
             <div className="navbar-spacing">
                 <Intro />
                 <About />
                 <Portfolio />
-                <Experience />
+                <Experience isMobile={isMobile} />
                 <Contact />
             </div>
         </>
