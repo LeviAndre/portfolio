@@ -36,7 +36,7 @@ function About () {
                                 
                                 Tenho atuado profissionalmente como desenvolvedor ha pouco mais de um ano cuidando da manutenção e desenvolvimento de novas features para as plataformas 
                                 das quais eu sou responsável, ambos em front-end e back-end. Estou empolgado com o futuro da minha carreira como desenvolvedor e ansioso para aprender e
-                                apromirar cada vez mais a qualidade do meu código.
+                                aprimorar cada vez mais a qualidade do meu código.
                             </p>
                         </div>
                     </div>                    
@@ -57,7 +57,7 @@ function About () {
                     <div className="col-12 d-flex flex-column justify-content-between align-items-center">
                         <div className="col-xxl-9 col-xl-12 d-flex flex-wrap justify-content-center anim3">
                             <div className="textoP col-11 col-xl-5 transparent-dark-bg skill-box">
-                                <p className="h-75"><b>React e Angular:</b> Tenho contato com ambas as tecnologias nos meus projetos e no meio profissional desde sempre, mesmo sendo dois mundos completamente diferentes.</p>
+                                <p className="h-75"><b>React e Angular:</b> Tenho contato com ambas as tecnologias e experiencia em projetos com arquitetura a arquitetura do Angular, ou o gerenciamento de estado do React.</p>
                                 <div>
                                     <img src={reactIcon} alt="" className="tech-icon"/>
                                     <img src={angularIcon} alt="" className="tech-icon"/>
@@ -65,14 +65,14 @@ function About () {
                             </div>
 
                             <div className="textoP col-11 col-xl-5 transparent-dark-bg skill-box">
-                                <p className="h-75"><b>.NET:</b> Tenho experiência com .NET até nas versões mais antigas (merito aos sistemas legado), e todo o meu conhecimento de back-end foi moldado em cima dessa tecnologia. </p>
+                                <p className="h-75"><b>.NET:</b> Tenho experiência com .NET até nas versões mais antigas (merito aos sistemas legado), e todo o meu conhecimento de back-end foi construido em cima dessa tecnologia. </p>
                                 <div>
                                     <img src={csharpIcon} alt="" className="tech-icon"/>
                                 </div>
                             </div>
 
                             <div className="textoP col-11 col-xl-5 transparent-dark-bg skill-box">
-                                <p className="h-75"><b>Javascript e Typescript:</b> Javascript é indispensável, e na maioria dos projetos dos quais eu faço parte, eu tenho também mantido contato com o JS tipado.</p>
+                                <p className="h-75"><b>Javascript e Typescript:</b> Tenho experiência de longa data com as principais ferramentas do desenvolvimento front-end. Utilizadas de acordo com a necessidade do projeto.</p>
                                 <div>
                                     <img src={jsIcon} alt="" className="tech-icon"/>
                                     <img src={tsIcon} alt="" className="tech-icon"/>

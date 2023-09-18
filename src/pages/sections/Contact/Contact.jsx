@@ -23,14 +23,14 @@ function Contact() {
 
                 <div className="contact-container">
                     <div className="textoP col-xxl-6 col-xl-6 col-12">
-                        <p><a href="" className="text-light d-flex align-items-center"><img src={linkedin} className="linkedin-icon mx-2" alt="Instagram" />Linkedin</a></p>
-                        <p><a href="" className="text-light d-flex align-items-center"><img src={github} className="github-icon mx-2" alt="Instagram" />Github</a></p>
-                        <p><a href="" className="text-light d-flex align-items-center"><img src={instagram} className="instagram-icon mx-2" alt="Instagram" />Instagram</a></p>
+                        <p><a href="https://www.linkedin.com/in/andré-levi-412321190/" className="text-light d-flex align-items-center" target="_blank"><img src={linkedin} className="linkedin-icon mx-2" alt="Instagram" />Linkedin</a></p>
+                        <p><a href="https://github.com/LeviAndre" className="text-light d-flex align-items-center" target="_blank"><img src={github} className="github-icon mx-2" alt="Instagram" />Github</a></p>
+                        <p><a href="https://www.instagram.com/levi767_/" className="text-light d-flex align-items-center" target="_blank"><img src={instagram} className="instagram-icon mx-2" alt="Instagram" />Instagram</a></p>
                     </div>
 
                     <div className="textoP col-xxl-6 col-xl-6 col-12">
-                        <p><b>Email: </b><a href="" className="text-light">andrelevi767@gmail.com</a></p>
-                        <p><b>Celular: </b><a href="" className="text-light">(11) 9 9484-8357</a></p>
+                        <p><b>Email: </b><a href="mailto:andrelevi767@gmail.com" className="text-light" target="_blank">andrelevi767@gmail.com</a></p>
+                        <p><b>Celular: </b><a href="tel:+5511994848357" className="text-light" target="_blank">(11) 9 9484-8357</a></p>
                     </div>
                 </div>
             </section>
