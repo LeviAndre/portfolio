@@ -2,6 +2,7 @@ import nfIcon from "./img/nf-icon.png"
 import cetIocn from "./img/cet-icon.png"
 
 import angularIcon from "../../../assets/icons/angular.svg"
+import reactIcon from "../../../assets/icons/reactjs.svg"
 import jsIcon from "../../../assets/icons/js.svg"
 import tsIcon from "../../../assets/icons/typescript.svg"
 import csharpIcon from "../../../assets/icons/csharp.svg"
