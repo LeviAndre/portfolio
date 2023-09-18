@@ -14,7 +14,7 @@ export const experiences = [
         jobText: "Desenvolvedor Fullstack",
         startedAt: "2021",
         description: "Atuo na Nova Futura há aproximadamente dois anos como Desenvolvedor, responsável por realizar manutenções e desenvolver novas features para nossas plataformas, utilizando diversas tecnologias.",
-        icons: [angularIcon, jsIcon, tsIcon, csharpIcon, sassIcon]
+        icons: [angularIcon, reactIcon, jsIcon, tsIcon, csharpIcon, sassIcon]
     },
     {
         imgSrc: cetIocn,
