@@ -27,14 +27,14 @@ export const projects = [
         year: 2022,
         images: [cybersupply1, cybersupply2, cybersupply3, cybersupply4, cybersupply5],
         title: "Cyber Supply",
-        description: "Cyber Supply é um projeto criado para um trabalho de faculdade há 3 anos, que passou por diversas refatorações desde então. A ideia é ser um marketplace para projetos de software precisando de apoio, e esta atualmente tendo seu back-end refeito em outro projeto.",
+        description: "Cyber Supply é um projeto que teve origem como um trabalho de faculdade há três anos atrpás, e desde então passou por diversas refatorações desde então. A ideia é ser um marketplace para projetos de software precisando de apoio, e está atualmente tendo seu back-end refatorado em projeto separado.",
         fmrkIcons: [ reactIcon, jsIcon, htmlIcon, cssIcon ]
     },
     {
         year: 2021,
         images: [bikcraft1, bikcraft2, bikcraft3],
         title: "Bikcraft",
-        description: "Bikcraft foi um projeto feito para acompanhar um curso de front-end e alinhar mais meus conhecimentos de HTML e CSS algum tempo atrás. A ideia do projeto seria basicamente uma Landing Page de um site de venda de bicicletas.",
+        description: "Bikcraft foi um projeto feito para acompanhar um curso de front-end e alinhar mais meus conhecimentos de HTML e CSS há algum tempo atrás. A ideia do projeto seria basicamente uma Landing Page de um site de venda de bicicletas.",
         fmrkIcons: [ htmlIcon, cssIcon ],
         githubUrl: "https://github.com/LeviAndre/bikcraft",
     },

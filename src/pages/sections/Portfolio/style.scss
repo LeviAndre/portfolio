@@ -106,9 +106,43 @@
     padding: 0 3rem;
 }
 
+.buttons-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    background-color: rgba(37, 37, 37, 0.8);
+
+    display: flex;
+    justify-content: center;
+}
+
+.embla__prev {
+    padding-top: 10px;
+    background: none;
+    border: none;
+    width: 4rem;
+}
+
+.embla__next {
+    padding-top: 10px;
+    background: none;
+    border: none;
+    width: 4rem;
+}
+
 @media (max-width: 1400px) {
     .textbox-padding{
         padding: 3rem 0;
+    }
+
+    .embla__prev {
+        width: 3rem;
+    }
+    
+    .embla__next {
+        width: 3rem;
     }
 }
 

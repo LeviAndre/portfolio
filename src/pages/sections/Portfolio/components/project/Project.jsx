@@ -1,12 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 
 import useEmblaCarousel from 'embla-carousel-react'
 
 import githubIcon from "../../../../../assets/icons/github.svg"
 import githubGreyIcon from "../../../../../assets/icons/github-grey.svg"
 
+import arrowLeft from "../../img/icons/li_chevron-left.svg"
+import arrowRight from "../../img/icons/li_chevron-right.svg"
+
 function Project({ year, images, title, description, githubUrl, fmrkIcons }) {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+
+    const scrollPrev = useCallback(() => {
+        if (emblaApi) emblaApi.scrollPrev()
+      }, [emblaApi])
+    
+      const scrollNext = useCallback(() => {
+        if (emblaApi) emblaApi.scrollNext()
+      }, [emblaApi])
 
     useEffect(() => {
       if (emblaApi) {
@@ -29,13 +40,17 @@ function Project({ year, images, title, description, githubUrl, fmrkIcons }) {
             <div className="project-container">
 
                 <div className="carousel-container col-xxl-6 col-12">
-                    <div className="embla" ref={emblaRef}>
+                    <div className="embla position-relative" ref={emblaRef}>
                         <div className="embla__container">
                             {images && images.map((image, index) => (
                                 <div key={index} className="embla__slide slide-container">
                                     <img src={image} alt=""  className="w-100 h-100"/>
                                 </div>
                             ))}
+                        </div>
+                        <div className="buttons-container">
+                            <button class="embla__prev" onClick={scrollPrev}><img src={arrowLeft} className="w-100" alt="Voltar" /></button>
+                            <button class="embla__next" onClick={scrollNext}><img src={arrowRight} className="w-100" alt="Próximo" /></button>
                         </div>
                     </div>
                 </div>

@@ -7,6 +7,7 @@ import jsIcon from "../../../assets/icons/js.svg"
 import tsIcon from "../../../assets/icons/typescript.svg"
 import csharpIcon from "../../../assets/icons/csharp.svg"
 import sassIcon from "../../../assets/icons/sass.svg"
+import sqlIcon from "../../../assets/icons/sql.svg"
 
 export const experiences = [
     {
@@ -15,7 +16,7 @@ export const experiences = [
         jobText: "Desenvolvedor Fullstack",
         startedAt: "2021",
         description: "Atuo na Nova Futura há aproximadamente dois anos como Desenvolvedor, responsável por realizar manutenções e desenvolver novas features para nossas plataformas, utilizando diversas tecnologias.",
-        icons: [angularIcon, reactIcon, jsIcon, tsIcon, csharpIcon, sassIcon]
+        icons: [angularIcon, reactIcon, jsIcon, tsIcon, csharpIcon, sqlIcon]
     },
     {
         imgSrc: cetIocn,

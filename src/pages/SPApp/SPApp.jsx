@@ -37,7 +37,7 @@ function SPApp() {
         <>
             <Navbar isMobile={isMobile} />
 
-            <div className="navbar-spacing">
+            <div className="navbar-spacing overflow-hidden">
                 <Intro />
                 <About />
                 <Portfolio />

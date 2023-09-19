@@ -9,6 +9,7 @@ import angularIcon from "../../../assets/icons/angular.svg"
 import csharpIcon from "../../../assets/icons/csharp.svg"
 import jsIcon from "../../../assets/icons/js.svg"
 import tsIcon from "../../../assets/icons/typescript.svg"
+import sqlIcon from "../../../assets/icons/sql.svg"
 
 function About () {
     return (
@@ -81,6 +82,10 @@ function About () {
 
                             <div className="textoP col-11 col-xl-5 transparent-dark-bg skill-box">
                                 <p className="h-75"><b>SQL:</b> Tenho conhecimento a respeito da estrutura de um banco de dados relacional, e prática com a execução de queries quando necessário.</p>
+                            
+                                <div>
+                                    <img src={sqlIcon} alt="" className="tech-icon"/>
+                                </div>
                             </div>
                         </div>
 
