@@ -57,8 +57,9 @@
     width: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .inicio {
         height: 75vh; 
+        background-position: 60% 50%;
     }
   }
