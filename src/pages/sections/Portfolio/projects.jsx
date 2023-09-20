@@ -27,7 +27,7 @@ export const projects = [
         year: 2022,
         images: [cybersupply1, cybersupply2, cybersupply3, cybersupply4, cybersupply5],
         title: "Cyber Supply",
-        description: "Cyber Supply é um projeto que teve origem como um trabalho de faculdade há três anos atrpás, e desde então passou por diversas refatorações desde então. A ideia é ser um marketplace para projetos de software precisando de apoio, e está atualmente tendo seu back-end refatorado em projeto separado.",
+        description: "Cyber Supply é um projeto que teve origem como um trabalho de faculdade há três anos atrás, e passou por diversas refatorações desde então. A ideia é ser um marketplace para projetos de software precisando de apoio, e está atualmente tendo seu back-end refatorado em projeto separado.",
         fmrkIcons: [ reactIcon, jsIcon, htmlIcon, cssIcon ]
     },
     {
