@@ -12,6 +12,11 @@ import psicologa1 from "./img/apresentacao-profissional/psicologa-1.jpg"
 import psicologa2 from "./img/apresentacao-profissional/psicologa-2.jpg"
 import psicologa3 from "./img/apresentacao-profissional/psicologa-3.jpg"
 
+import session1 from "./img/session-control/session-control1.gif"
+import session2 from "./img/session-control/session-control2.png"
+import session3 from "./img/session-control/session-control3.png"
+import session4 from "./img/session-control/session-control4.png"
+
 import reactIcon from "../../../assets/icons/reactjs.svg"
 import htmlIcon from "../../../assets/icons/html5.svg"
 import cssIcon from "../../../assets/icons/css.svg"
@@ -25,10 +30,17 @@ import tsIcon from "../../../assets/icons/typescript.svg"
 export const projects = [
     {
         year: 2022,
+        images: [session1, session2, session3, session4],
+        title: "Controle de sessões",
+        description: "Um projeto feito para gerenciar sessões em plataformas com login, baseando-se em um token fixo de JWT gerado por um back-end simulado com JsonServer. O principal objetivo do projeto é utilizar os Interceptors e Guards do Angular para controlar a validade de uma sessão com base no token armazenado.",
+        fmrkIcons: [ angularIcon, bootstrapIcon, jsIcon, tsIcon, htmlIcon, cssIcon ],
+        githubUrl: "https://github.com/LeviAndre/session-control",
+    },
+    {
         images: [cybersupply1, cybersupply2, cybersupply3, cybersupply4, cybersupply5],
         title: "Cyber Supply",
         description: "Cyber Supply é um projeto que teve origem como um trabalho de faculdade há três anos atrás, e passou por diversas refatorações desde então. A ideia é ser um marketplace para projetos de software precisando de apoio, e está atualmente tendo seu back-end refatorado em projeto separado.",
-        fmrkIcons: [ reactIcon, jsIcon, htmlIcon, cssIcon ]
+        fmrkIcons: [ reactIcon, bootstrapIcon, jsIcon, htmlIcon, cssIcon ]
     },
     {
         year: 2021,
