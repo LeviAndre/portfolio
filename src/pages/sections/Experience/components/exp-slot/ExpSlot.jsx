@@ -6,7 +6,7 @@ function ExpSlot({ isMobile, imgSrc, corpText, jobText, startedAt, endedAt = "At
         <>
             <div className="exp-container">
                 <div className="col-xxl-1 col-xl-1 col-2">
-                    <img src={imgSrc} className="exp-icon" alt="" />
+                    <img src={imgSrc} style={{background: 'white'}} className="exp-icon" alt="" />
                 </div>
 
                 <div className="px-4 col-xxl-11 col-xl-11 col-10">

@@ -1,11 +1,11 @@
 import React from "react";
 
-import photo from "./img/photo.png"
+import photo from "./img/photo.jpg"
 
 import "./style.scss"
 
 import reactIcon from "../../../assets/icons/reactjs.svg"
-import angularIcon from "../../../assets/icons/angular.svg"
+import angularIcon from "../../../assets/icons/next-js.svg"
 import csharpIcon from "../../../assets/icons/csharp.svg"
 import jsIcon from "../../../assets/icons/js.svg"
 import tsIcon from "../../../assets/icons/typescript.svg"
@@ -32,7 +32,7 @@ function About () {
                         <div className="about-text-box">
                             <h1 className="titulo mb-3">SOBRE MIM</h1>
                             <p className="textoP mb-3">
-                                    Meu nome é André Levi, tenho 23 anos e estou me formando esse ano (2023) em Ciência da Computação. Desde pequeno eu vivo em contato com computadores
+                                    Meu nome é André Levi, tenho 23 anos e sou formado em Ciência da Computação. Desde pequeno eu vivo em contato com computadores
                                 e sendo assim, minha escolha da carreira não poderia ser diferente. <br /><br /> 
                                 
                                 Tenho atuado profissionalmente como desenvolvedor ha pouco mais de um ano cuidando da manutenção e desenvolvimento de novas features para as plataformas 
@@ -58,7 +58,7 @@ function About () {
                     <div className="col-12 d-flex flex-column justify-content-between align-items-center">
                         <div className="col-xxl-9 col-xl-12 d-flex flex-wrap justify-content-center anim3">
                             <div className="textoP col-11 col-xl-5 transparent-dark-bg skill-box">
-                                <p className="h-75"><b>React e Angular:</b> Tenho contato com ambas as tecnologias e experiencia em projetos com arquitetura a arquitetura do Angular, ou o gerenciamento de estado do React.</p>
+                                <p className="h-75"><b>Next e React:</b> Tenho contato com React desde o início da minha carreira, recentemente também tenho desenvolvido o conceito de server-side e seus benefícios com Nextjs</p>
                                 <div>
                                     <img src={reactIcon} alt="" className="tech-icon"/>
                                     <img src={angularIcon} alt="" className="tech-icon"/>
